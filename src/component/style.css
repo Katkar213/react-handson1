@@ -1,0 +1,42 @@
+
+body{
+    background-color:aquamarine;
+}
+.Funcbutton{
+    height:200px;
+    width:300px;
+    border:2px solid black ;
+
+}
+
+h1{
+    color:black;
+}
+button{
+    height:60px;
+    width:380px;
+    border-radius:10px;
+    border:2px solid black;
+    margin: 20px;;
+}
+.outerdiv{
+    width:90%;
+    height:80%;
+    display:flex;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+.Funcdiv{
+    height:300px;
+    width:500px;
+    background-color: skyblue;
+    border:2px solid black;
+    border-radius:10px;
+}
+.classdiv{
+    height:300px;
+    width:500px;
+    background-color: yellow;
+    border:2px solid black;
+    border-radius:10px;
+}
