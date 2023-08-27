@@ -1,33 +1,49 @@
-import React,{useState} from "react"
+import React,{useState,Component} from "react"
 import ClassCompo from "./ClassCompo"
 import FuncCompo from "./FuncCompo"
 import "./style.css"
 
 function DisplayData(){
     const[count,SetCount]=useState(true);
-    const[count2,SetCount2]=useState(true);
-
     return(
-        <div className="outerdiv" >
+      
             <div>
-             <button onClick={()=>{
+             <button  className="btn1" onClick={()=>{
             SetCount(!count)
         }} >Styling using Function Component</button>
 
         {count?<FuncCompo/>:" "}
-        </div>
-
-        <div >
-            <button onClick={()=>{
-                SetCount2(!count2)
-            }}>Styling using classCompo</button>
-        
-
-        {count2?<ClassCompo/>:" "}
-        </div>
-        </div>
-       
+        </div>  
     )
 
 }
+
 export default DisplayData
+
+class ABC extends Component{
+    constructor (){
+super();
+this.state={
+    val:true,
+};
+console.log(this.state.val);
+}
+    
+   render() {
+    
+    return(
+        <div>
+              <button  className="btn2" onClick={()=>{
+                this.setState({val:!this.state.val})
+            }}>Styling using classCompo</button>
+        
+
+        {this.state.val?<ClassCompo/>:" "}
+        </div>
+    )
+        }
+    }
+    
+
+
+export  {ABC}

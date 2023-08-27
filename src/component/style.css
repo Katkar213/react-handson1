@@ -11,20 +11,36 @@ body{
 
 h1{
     color:black;
+   
+
+}
+.mainhead{
+    position: absolute;
+    margin-top: -330px;
 }
 button{
     height:60px;
     width:380px;
     border-radius:10px;
     border:2px solid black;
-    margin: 20px;;
+    margin: 20px;
+}
+.btn1{
+    position:fixed;
+    left:10%;
+    top:125px;
+}
+.btn2{
+    position:fixed;
+    left:65%;
+    top:125px;
 }
 .outerdiv{
-    width:90%;
-    height:80%;
+   
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-left: 5%;
+    margin-top: 350px;
 }
 .Funcdiv{
     height:300px;
@@ -32,6 +48,8 @@ button{
     background-color: skyblue;
     border:2px solid black;
     border-radius:10px;
+    text-align:center;
+  
 }
 .classdiv{
     height:300px;
@@ -39,4 +57,5 @@ button{
     background-color: yellow;
     border:2px solid black;
     border-radius:10px;
+    text-align:center;
 }
